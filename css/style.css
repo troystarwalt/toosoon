@@ -1,2 +1,78 @@
 /* For all pages*/
-#wrapper {width: 1020px;}
+#wrapper {
+	margin: 0 auto;
+	width: 930px;
+	border: 1px solid grey;
+	overflow: auto;
+}
+
+img {
+	display: block;
+	float: left;
+	margin: 5px 5px;
+	
+}
+
+/*img:after{
+	clear: both;
+
+}*/
+
+.overlay-one{ /*curtis*/
+	display:none;
+    position: absolute;
+    left: 218px;
+    color: white;
+    top: 175px;
+    font-size: 30px;
+    font-family: helvetica;
+}
+
+.overlay-two{ /*lennon*/
+	display:none;
+    position: absolute;
+    left: 502px;
+    color: white;
+    top: 175px;
+    font-size: 30px;
+    font-family: helvetica;
+}
+.overlay-three{ /*winehouse*/
+	display:none;
+    position: absolute;
+    left: 792px;
+    color: white;
+    top: 175px;
+    font-size: 30px;
+    font-family: helvetica;
+}
+
+
+img:hover + .overlay-one, img:hover + .overlay-two, img:hover + .overlay-three{
+	display: block;
+	background-color: dimgrey;
+}
+
+#header {
+	text-align: center;
+	font-family: helvetica;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	background-color: dimgrey;
+	opacity:.8;
+	font-family: helvetica;
+}
+
+li {
+	float: left;
+	padding-right: 10px;
+}
+
+a {
+	width: 60px;
+}
